@@ -34,7 +34,7 @@
 
 
 
-        <div class="col-features feature-card-singlecolumn">
+        <div class="col-features feature-card-singlecolumn glitter-card">
 
             <div class="feature-item">
                 <span class="tick">✔</span>

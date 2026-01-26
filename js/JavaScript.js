@@ -51,11 +51,6 @@ function initPageDownIndicator() {
 }
 
 
-function isInsideNoScrollZone(event) {
-    return event.target.closest(".no-page-scroll");
-}
-
-
 /* =========================
    DESKTOP + MOBILE NAVIGATION
 ========================= */
@@ -97,8 +92,6 @@ function isInsideNoScrollZone(event) {
     /* Desktop wheel */
     window.addEventListener("wheel", function (e) {
 
-        // 🚫 Never override navbar scroll
-        if (isInsideNoScrollZone(e)) return;
 
         if (window.innerWidth <= 768) return;
 
@@ -116,24 +109,17 @@ function isInsideNoScrollZone(event) {
 
     }, { passive: true });
 
-
-
-
-
     /* Mobile swipe */
     let startY = 0;
 
     window.addEventListener("touchstart", e => {
-        // 🚫 Ignore navbar interactions
-        if (e.target.closest(".no-page-scroll")) return;
+
         startY = e.touches[0].clientY;
     }, { passive: true });
 
     window.addEventListener("touchend", e => {
 
         if (window.innerWidth > 768) return;
-
-        if (touchStartTarget?.closest(".no-page-scroll")) return;
 
         const diff = startY - e.changedTouches[0].clientY;
         if (Math.abs(diff) < 90) return;
@@ -164,4 +150,70 @@ document.addEventListener("DOMContentLoaded", function () {
 
     initPageDownIndicator();
 
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    if (!menuToggle || !nav) {
+        console.warn("Menu toggle or nav not found");
+        return;
+    }
+
+    menuToggle.addEventListener("click", function (e) {
+        e.stopPropagation();      // prevent bubbling
+        nav.classList.toggle("open");
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (e) {
+        if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+            nav.classList.remove("open");
+        }
+    });
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navbar = document.querySelector(".navbar");
+    if (!navbar) return;
+
+    function handleNavbarScroll() {
+        if (window.scrollY > 10) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    }
+
+    handleNavbarScroll(); // run once on load
+    window.addEventListener("scroll", handleNavbarScroll);
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    if (window.innerWidth > 768) return; // desktop untouched
+
+    document.querySelectorAll(".nav-dropdown").forEach(dropdown => {
+
+        const toggle = dropdown.querySelector("a");
+
+        if (!toggle) return;
+
+        toggle.addEventListener("click", function (e) {
+
+            // If submenu is NOT open → open it
+            if (!dropdown.classList.contains("open")) {
+                e.preventDefault();          // stop navigation
+                dropdown.classList.add("open");
+            }
+            // ELSE: submenu already open → allow navigation
+            // (no preventDefault here)
+        });
+    });
 });

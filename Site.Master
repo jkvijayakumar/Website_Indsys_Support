@@ -38,7 +38,7 @@
             <a runat="server" id="navHome" href="home.aspx">Home</a>
 
             <div class="nav-dropdown">
-        <a runat="server" id="navServices" href="services.aspx" class="nav-link">
+        <a runat="server" id="navServices" href="services.aspx" class="nav-link dropdown-toggle">
             Services ▾
         </a>
 

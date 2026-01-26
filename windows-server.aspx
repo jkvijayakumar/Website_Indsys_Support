@@ -59,7 +59,7 @@
         <br />
     <!-- Features / Service Items -->
     <div class="container">
-        <div class="feature-card">
+        <div class="feature-card glitter-card">
 
             <div class="feature-item">
                 <span class="tick">✔</span>
