@@ -1,0 +1,209 @@
+﻿/* =========================
+   MOBILE (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+
+    .page-content {
+        padding-top: 64px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 2001;
+    }
+
+        .menu-toggle span {
+            width: 26px;
+            height: 3px;
+            background: #000;
+            margin: 4px 0;
+            border-radius: 2px;
+        }
+
+    nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #0f172a;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        z-index: 2000;
+
+    }
+
+        nav.open {
+            display: flex;
+        }
+
+        nav a {
+            margin: 12px 0;
+            font-size: 18px;
+            color: #fff;
+        }
+
+    /* Dropdown */
+    .nav-dropdown {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+             color: #ffffff; 
+            font-size: 15px;
+            text-decoration: none;
+            transition: background 0.25s;
+        }
+
+    .nav-dropdown.open .dropdown-menu {
+        display: block;
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .logo img {
+        height: 26px;
+    }
+
+
+    /*/*html, body {
+        overflow-y: auto !important;*/ /* allow vertical scrolling */
+        /*overflow-x: hidden;*/ /* keep horizontal scroll hidden */
+        /*height: auto !important;*/ /* let body expand */
+        /*touch-action: pan-y;*/ /* allow swipe to scroll */
+    /*}*/
+
+    .section {
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+    }
+
+    /* Two-column to single-column */
+    .two-col {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+        .two-col > div {
+            width: 100%;
+        }
+
+    .col-text {
+        order: 1;
+    }
+
+    .col-features {
+        order: 2;
+    }
+
+    /* Typography adjustments */
+    h1 {
+        font-size: 26px;
+        line-height: 1.25;
+    }
+
+    p,
+    .section-subtext {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Feature Cards */
+    .feature-card {
+        grid-template-columns: 1fr;
+        padding: 24px;
+        margin-top: auto;
+    }
+
+    .feature-card-singlecolumn {
+        padding: 24px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        border-radius: 16px;
+    }
+
+    .feature-item {
+        font-size: 14px;
+    }
+
+    .tick {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+    }
+
+    /* Hero/background adjustments */
+    .hero-bg {
+        background-size: contain !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+        background-color: #000 !important; /* fills empty space */
+    }
+}
+
+
+/* =========================
+   TABLET (769px – 992px)
+========================= */
+@media (min-width: 769px) and (max-width: 992px) {
+    .feature-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =========================
+   DESKTOP (≥ 993px)
+========================= */
+@media (min-width: 769px) {
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .nav-dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        background: rgb(177 180 193);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        border-radius: 10px;
+        padding: 12px 0;
+        min-width: 260px;
+        z-index: 2000;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+}
+
+
+nav.open {
+    display: flex !important;
+}

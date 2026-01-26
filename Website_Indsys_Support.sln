@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website_Indsys_Support", "Website_Indsys_Support.csproj", "{76801A40-392D-42FE-9825-775F2E217EC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76801A40-392D-42FE-9825-775F2E217EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76801A40-392D-42FE-9825-775F2E217EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76801A40-392D-42FE-9825-775F2E217EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76801A40-392D-42FE-9825-775F2E217EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C462BF3-340B-4FE7-8321-B17DCB0A4F2F}
+	EndGlobalSection
+EndGlobal

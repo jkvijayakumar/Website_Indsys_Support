@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Website_Indsys_Support.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+
+<script src="js/JavaScript.js"></script>
+
+
+<body>
+ <form runat="server">
+
+<div id="global-bg"></div>
+
+<header class="navbar no-page-scroll">
+    <div class="container nav-wrap">
+        <div class="logo">
+            <img src="images/indsys-logo.png" style="height:30px">
+        </div>
+
+        <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+        <nav id="mainNav">
+            <a runat="server" id="navHome" href="home.aspx">Home</a>
+
+            <div class="nav-dropdown">
+        <a runat="server" id="navServices" href="services.aspx" class="nav-link">
+            Services ▾
+        </a>
+
+        <div class="dropdown-menu">
+            <a runat="server" id="navAsc" href="asc.aspx">ASC / Managed IT Services</a>
+            <a runat="server" id="navSecurity"  href="security.aspx">Security Services</a>
+            <a runat="server" id="navBackup"  href="backup.aspx">Backup Services</a>
+            <a runat="server" id="navWindowsServer"  href="windows-server.aspx">Windows Server Services</a>
+            <a runat="server" id="navEmail"  href="email.aspx">E-Mail Solutions</a>
+            <a runat="server" id="navHosting"  href="hosting.aspx">Hosting Services</a>
+            <a runat="server" id="navSoftware"  href="software.aspx">Software Services</a>
+        </div>
+    </div>
+
+            <a runat="server" id="navPricing" href="pricing.aspx">Pricing</a>
+            <a runat="server" id="navAssessment" href="#" class="btn">Free Assessment</a>
+        </nav>
+    </div>
+</header>
+
+
+<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+<br />
+<br />
+<asp:ContentPlaceHolder ID="AssessmentContent" runat="server">
+
+    <div id="pageDownIndicator" runat="server" ClientIDMode="Static" aria-label="Go to next page">
+    <span>⌄</span>
+</div>
+
+ </asp:ContentPlaceHolder>
+
+<%--<footer class="footer">
+    © 2026 Designed by Indsys. All rights reserved.
+</footer>--%>
+
+</form>
+
+</body>
+</html>
