@@ -1,0 +1,82 @@
+﻿<%@ Page Title="ASC | Comprehensive Managed IT & Digital Infrastructure Services"
+    Language="C#"
+    MasterPageFile="~/Site.Master"
+    AutoEventWireup="true" %>
+
+<%@ Register Src="~/seo/seo-common.ascx" TagPrefix="uc" TagName="Seo" %>
+
+<asp:Content ID="Head" ContentPlaceHolderID="HeadContent" runat="server">
+    <meta name="description" content="ASC | Comprehensive Managed IT & Digital Infrastructure Services" />
+    <uc:Seo />
+    <body data-page="asc.aspx">
+</asp:Content>
+
+<asp:Content ID="Body" ContentPlaceHolderID="MainContent" runat="server">
+<div data-bg="images/home-bg.jpg"></div>
+
+
+<section class="contact-page">
+
+    <div class="container">
+
+        <!-- CONTACT DETAILS (ONLY FOR CONTACT MODE) -->
+        <div id="contactInfo" class="contact-info">
+            <h2>Contact</h2>
+
+            <p class="contact-item">
+                📧 <a href="mailto:support@raindrive.net">support@raindrive.net</a>
+            </p>
+
+            <p class="contact-item">
+                🌐 <a href="https://www.raindrive.net" target="_blank">www.raindrive.net</a>
+            </p>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-wrapper">
+
+            <h2>Get in Touch</h2>
+            <p class="form-subtext">
+                Share your details and our team will reach out shortly.
+            </p>
+
+            <form id="contactForm" method="post" runat="server">
+
+                <!-- hidden fields -->
+                <input type="hidden" name="remarks" id="remarks" />
+
+                <div class="form-grid">
+
+                    <input type="text" name="name" placeholder="Name *" required />
+                    
+                    <select name="designation" required>
+                        <option value="">Designation *</option>
+                        <option>IT Manager</option>
+                        <option>System Administrator</option>
+                        <option>CTO / CIO</option>
+                        <option>Business Owner</option>
+                        <option>Procurement</option>
+                        <option>Other</option>
+                    </select>
+
+                    <input type="text" name="company" placeholder="Company *" required />
+                    <input type="email" name="email" placeholder="Email ID *" required />
+                    <input type="tel" name="mobile" placeholder="Mobile No *" required />
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+</asp:Content>

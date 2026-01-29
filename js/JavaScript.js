@@ -5,13 +5,11 @@
 window.pages = [
     "home.aspx",
     "services.aspx",
-    "asc.aspx",
-    "security.aspx",
-    "backup.aspx",
-    "windows-server.aspx",
-    "email.aspx",
-    "hosting.aspx",
-    "software.aspx"
+    "baas.aspx",
+    "draas.aspx",
+    "hybrid.aspx",
+    "application.aspx",
+    "plans.aspx"
 ];
 
 /* =========================
@@ -38,17 +36,34 @@ function initPageDownIndicator() {
 
     console.log("Indicator page:", current, "index:", index);
 
+    // No next page → never show
     if (index === -1 || index === pages.length - 1) {
         indicator.style.display = "none";
         return;
     }
 
-    indicator.style.display = "flex";
+    // Hide initially
+    indicator.style.display = "none";
 
+    // Click → go to next page
     indicator.onclick = function () {
         location.href = pages[index + 1];
     };
+
+    // Show only when page bottom is reached
+    window.addEventListener("scroll", function () {
+
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight;
+        const docHeight = document.documentElement.scrollHeight;
+
+        // Adjust threshold if needed (50px before end)
+        const nearBottom = scrollTop + windowHeight >= docHeight - 150;
+
+        indicator.style.display = nearBottom ? "flex" : "none";
+    });
 }
+
 
 
 /* =========================
@@ -217,3 +232,94 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Contact Page
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(window.location.search);
+    const mode = params.get("mode");
+    const plan = params.get("plan");
+
+    const contactInfo = document.getElementById("contactInfo");
+    const remarksField = document.getElementById("remarks");
+
+    // Allowed values
+    const allowedModes = ["contact", "assessment", "sales"];
+    const allowedPlans = ["starter", "business", "enterprise", "addon"];
+
+    // 🚫 Reject invalid mode
+    if (mode && !allowedModes.includes(mode)) {
+        window.location.href = "contact.aspx";
+        return;
+    }
+
+    // 🚫 Reject invalid plan (only when mode = sales)
+    if (mode === "sales" && plan && !allowedPlans.includes(plan)) {
+        window.location.href = "contact.aspx";
+        return;
+    }
+
+    // Default mode
+    const finalMode = mode || "contact";
+
+    if (finalMode === "contact") {
+        contactInfo.style.display = "block";
+        remarksField.value = "General Contact";
+        return;
+    }
+
+    // Hide contact info for assessment & sales
+    contactInfo.style.display = "none";
+
+    if (finalMode === "assessment") {
+        remarksField.value = "Free Assessment";
+        return;
+    }
+
+    if (finalMode === "sales") {
+        const planMap = {
+            starter: "Starter Plan",
+            business: "Business Plan",
+            enterprise: "Enterprise Plan",
+            addon: "Add-On Service"
+        };
+
+        const planText = plan ? planMap[plan] : "General";
+
+        remarksField.value = "Sales Inquiry – " + planText;
+    }
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const images = [
+        "images/baas.png",
+        "images/hybrid.png",
+        "images/application.png"
+    ];
+
+    let index = 0;
+    const img = document.getElementById("slideImages");
+
+    // Safety check (important in master pages / partial loads)
+    if (!img) {
+        console.warn("slideImages not found in DOM");
+        return;
+    }
+
+    setInterval(() => {
+        img.style.opacity = 0;
+
+        setTimeout(() => {
+            index = (index + 1) % images.length;
+            img.src = images[index];
+            img.style.opacity = 1;
+        }, 500);
+
+    }, 3000);
+
+});
+
+

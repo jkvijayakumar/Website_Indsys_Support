@@ -78,33 +78,6 @@ namespace Website_Indsys_Support
         protected global::System.Web.UI.HtmlControls.HtmlAnchor navWindowsServer;
 
         /// <summary>
-        /// navEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor navEmail;
-
-        /// <summary>
-        /// navHosting control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor navHosting;
-
-        /// <summary>
-        /// navSoftware control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor navSoftware;
-
-        /// <summary>
         /// navPricing control.
         /// </summary>
         /// <remarks>
@@ -112,6 +85,15 @@ namespace Website_Indsys_Support
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor navPricing;
+
+        /// <summary>
+        /// navContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor navContact;
 
         /// <summary>
         /// navAssessment control.
@@ -148,5 +130,14 @@ namespace Website_Indsys_Support
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl pageDownIndicator;
+
+        /// <summary>
+        /// Footer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Footer;
     }
 }

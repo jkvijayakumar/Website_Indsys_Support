@@ -20,41 +20,28 @@ namespace Website_Indsys_Support
             else if (page.Contains("services"))
                 SetActive(navServices);
 
-            else if (page.Contains("asc"))
+            else if (page.Contains("baas"))
                 SetActive(navAsc);
 
-            else if (page.Contains("security"))
+            else if (page.Contains("draas"))
                 SetActive(navSecurity);
 
-            else if (page.Contains("backup"))
+            else if (page.Contains("hybrid"))
                 SetActive(navBackup);
 
-            else if (page.Contains("windows-server"))
+            else if (page.Contains("application"))
                 SetActive(navWindowsServer);
 
-            else if (page.Contains("email"))
-                SetActive(navEmail);
-
-            else if (page.Contains("hosting"))
-                SetActive(navHosting);
-
-            else if (page.Contains("software"))
-                SetActive(navSoftware);
-
-            else if (page.Contains("pricing"))
+            else if (page.Contains("plans"))
                 SetActive(navPricing);
-
-            else if (page.Contains("assessment"))
-                SetActive(navAssessment);
 
 
             if (page.Contains("asc") ||
-    page.Contains("security") ||
-    page.Contains("backup") ||
-    page.Contains("windows-server") ||
-    page.Contains("email") ||
-    page.Contains("hosting") ||
-    page.Contains("software"))
+    page.Contains("baas") ||
+    page.Contains("draas") ||
+    page.Contains("hybrid") ||
+    page.Contains("application"))
+
             {
                 SetActive(navServices);
             }
