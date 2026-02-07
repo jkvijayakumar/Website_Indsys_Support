@@ -28,7 +28,7 @@
 <header class="navbar no-page-scroll">
     <div class="container nav-wrap">
         <div class="logo">
-            <img src="images/raindrive_logo.png" style="height:30px">
+            <img src="images/raindrive_logo.png" style="height:50px">
         </div>
 
         <!-- Hamburger -->
@@ -67,13 +67,53 @@
 <br />
 <asp:ContentPlaceHolder ID="AssessmentContent" runat="server">
 
+    <!-- 
     <div id="pageDownIndicator" runat="server" ClientIDMode="Static" aria-label="Go to next page">
     <span>⌄</span>
 </div>
     </asp:ContentPlaceHolder>
-<asp:ContentPlaceHolder ID="Footer" runat="server" />
+    -->
+<asp:ContentPlaceHolder ID="Footer" runat="server"><footer class="site-footer">
+                <div class="footer-container">
 
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <p>📧 <a href="mailto:support@raindrive.net">support@raindrive.net</a></p>
+                        <p>🌐 <a href="https://www.raindrive.net" target="_blank">www.raindrive.net</a></p>
+                    </div>
 
+                    <div class="footer-column">
+                    </div>
+                     <div class="footer-column">
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="home.aspx">Home</a></li>
+                            <li><a href="services.aspx">Services</a></li>
+                            <li><a href="plans.aspx">Plans</a></li>
+                            <li><a href="contact.aspx?mode=assessment">Free Assessment</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="baas.aspx">Backup as a Service (BaaS)</a></li>
+                            <li><a href="draas.aspx">Disaster Recovery as a Service (DRaaS)</a></li>
+                            <li><a href="hybrid.aspx">Hybrid &amp; Multi-Cloud Backup</a></li>
+                            <li><a href="application.aspx">ERP &amp; Application Backup</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>Developed by <strong>Indsys</strong></p>
+                    <p>© RainDrive</p>
+                </div>
+            </footer>
+
+ </asp:ContentPlaceHolder>
 
 
 
