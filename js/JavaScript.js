@@ -329,3 +329,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("animate"); // reset
+                void entry.target.offsetWidth;             // reflow
+                entry.target.classList.add("animate");
+            }
+        });
+    }, {
+        threshold: 0.6
+    });
+
+    document.querySelectorAll(".zoom-text").forEach(el => {
+        observer.observe(el);
+    });
+
+});

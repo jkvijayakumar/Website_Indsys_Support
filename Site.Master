@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 
@@ -28,7 +30,7 @@
 <header class="navbar no-page-scroll">
     <div class="container nav-wrap">
         <div class="logo">
-            <img src="images/raindrive_logo.png" style="height:50px">
+            <img src="images/raindrive_new_logo.png" style="height:50px">
         </div>
 
         <!-- Hamburger -->
@@ -40,6 +42,23 @@
 
         <nav id="mainNav">
             <a runat="server" id="navHome" href="home.aspx">Home</a>
+
+
+            <div class="nav-dropdown">
+        <a runat="server" id="navAbout" href="#" class="nav-link dropdown-toggle">
+            About ▾
+        </a>
+
+            <div class="dropdown-menu">
+                <a href="home.aspx?scroll=WhatWeDo">What We Do</a>
+                <a href="home.aspx?scroll=WhyBackup">Why Backup & Identify Threats</a>
+                <a href="home.aspx?scroll=WhyRainDrive">Why RainDrive</a>
+                <a href="home.aspx?scroll=OurArchitectue">Our Backup Architecture</a>
+                <a href="home.aspx?scroll=IndustriesWeServe">Industries We Serve</a>
+            </div>
+
+    </div>
+
 
             <div class="nav-dropdown">
         <a runat="server" id="navServices" href="services.aspx" class="nav-link dropdown-toggle">
@@ -55,7 +74,8 @@
     </div>
 
             <a runat="server" id="navPricing" href="plans.aspx">Plans</a>
-            <a runat="server" id="navAssessment" href="contact.aspx?mode=assessment" class="btn">Free Assessment</a>
+            <a runat="server" id="navRaiseTicket" href="https://support.indsystech.com/" class="btn">Raise Ticket</a>
+            <a runat="server" id="navAssessment" href="contact.aspx?mode=assessment" class="btn">Get Started</a>
         </nav>
     </div>
 </header>

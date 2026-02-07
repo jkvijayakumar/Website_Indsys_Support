@@ -15,51 +15,84 @@
 <div data-bg="images/home-bg.jpg"></div>
 
 <section class="section animate">
-    <div class="container">
+ 
+<div class="container">
 
-        <div class="container two-col it-intro">
-            <div class="it-content">
-                <h1>ERP & Application Backup</h1>
+    <div class="container two-col it-intro">
+        <div class="it-content">
+            <h1>ERP & Application Backup</h1>
 
-                <p class="section-subtext">
-                    Application-aware backup solutions designed to protect mission-critical ERP
-                    systems, databases, and business applications.
-                </p>
+            <p class="section-subtitle">
+                RainDrive’s ERP & Application Backup ensures uninterrupted protection for your
+                mission-critical business applications, including ERP systems, databases, and
+                line-of-business platforms that power daily operations.
+            </p>
 
-                <div class="it-highlights">
-                    <div class="highlight-item">
-                        <span class="icon">🧠</span>
-                        <span>Application-consistent backups</span>
-                    </div>
-
-                    <div class="highlight-item">
-                        <span class="icon">⚡</span>
-                        <span>Fast restore with minimal downtime</span>
-                    </div>
-
-                    <div class="highlight-item">
-                        <span class="icon">🔄</span>
-                        <span>Granular & full-system recovery</span>
-                    </div>
-
-                    <div class="highlight-item">
-                        <span class="icon">📊</span>
-                        <span>Compliance-ready retention & reporting</span>
-                    </div>
-                </div>
-
-                <p class="section-subtext muted">
-                    Our backups capture application state, databases, and dependencies—ensuring
-                    reliable recovery without corruption or data loss.
-                </p>
-            </div>
-
-            <div class="it-image-fixed moving-image-container">
-                <img src="images/application.png" alt="ERP Backup" />
-            </div>
+           
         </div>
 
+        <div class="it-image-fixed moving-image-container">
+            <img src="images/application.png" alt="RainDrive ERP & Application Backup" />
+        </div>
     </div>
+
+    <div class="container">
+
+         <p class="section-subtitle">
+                Designed for performance-sensitive and data-intensive environments, RainDrive delivers
+                application-aware, consistent, and fully recoverable backups—managed end-to-end by
+                certified experts—so your applications remain secure, compliant, and always available.
+            </p>
+
+            <!-- SUB TITLE -->
+            <h3 class="section-title zoom-text">What RainDrive Delivers</h3>
+
+            <div class="it-highlights">
+                <div class="highlight-item">
+                    <span class="icon">🧠</span>
+                    <span>Application-aware, consistent backup technology</span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">🔄</span>
+                    <span>Granular & flexible recovery options</span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">⚡</span>
+                    <span>Optimized performance with minimal production impact</span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">🔐</span>
+                    <span>Enterprise-grade security with encryption in transit & at rest</span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">⏱️</span>
+                    <span>SLA-driven RPO & RTO assurance</span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">📊</span>
+                    <span>Continuous monitoring, validation & restore testing</span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">📑</span>
+                    <span>Compliance-ready retention, audit trails & reporting</span>
+                </div>
+            </div>
+
+            <p class="section-subtitle">
+                RainDrive engineers continuously monitor and validate application backups,
+                ensuring reliable, corruption-free recovery when your business needs it most.
+            </p>
+    </div>
+
+</div>
+
+
 </section>
 
 
@@ -68,7 +101,7 @@
 ========================== -->
 <section class="baas-section">
 
-    <h2 class="baas-title">Backup Capabilities</h2>
+    <h2 class="baas-title zoom-text">Backup Capabilities</h2>
     <p class="baas-subtitle">
         Purpose-built protection for business-critical applications and ERP platforms.
     </p>
@@ -123,8 +156,7 @@
      SECTION 3 – SUPPORTED APPLICATIONS
 ========================== -->
 <section class="baas-workloads">
-
-    <h3>Supported Applications</h3>
+<h2 class="baas-title zoom-text">Supported Applications</h2>
 
     <div class="container">
         <div class="col-features feature-card">

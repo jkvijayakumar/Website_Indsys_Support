@@ -15,52 +15,92 @@
 <div data-bg="images/home-bg.jpg"></div>
 
 <section class="section animate">
-    <div class="container">
 
-        <div class="container two-col it-intro">
-            <div class="it-content">
-                <h1>Managed Backup as a Service (BaaS)</h1>
+<div class="container">
 
-                <p class="section-subtext">
-                    We take full responsibility for protecting your business data through fully managed,
-                    monitored, and verified backup services—ensuring recovery readiness at all times.
-                </p>
+    <div class="container two-col it-intro">
+        <div class="it-content">
+            <h1>Managed Backup as a Service (BaaS)</h1>
 
-                <div class="it-highlights">
-                    <div class="highlight-item">
-                        <span class="icon">🛡️</span>
-                        <span>End-to-end backup ownership</span>
-                    </div>
+             <p class="section-subtitle">
+                RainDrive’s Managed Backup as a Service (BaaS) delivers enterprise-grade data protection
+                without the complexity of managing backup tools, infrastructure, or daily operations.
+            </p>
 
-                    <div class="highlight-item">
-                        <span class="icon">📊</span>
-                        <span>Continuous monitoring & reporting</span>
-                    </div>
+             <p class="section-subtitle">
+                We take complete responsibility for your backups—designing, deploying, monitoring,
+                and managing them end-to-end—so your data is always secure, compliant, and ready to recover.
+            </p>
 
-                    <div class="highlight-item">
-                        <span class="icon">⚠️</span>
-                        <span>Proactive failure alerts & remediation</span>
-                    </div>
-
-                    <div class="highlight-item">
-                        <span class="icon">🔐</span>
-                        <span>Secure retention & compliance-ready backups</span>
-                    </div>
-                </div>
-
-                <p class="section-subtext muted">
-                    Our engineers design, monitor, verify, and manage your backups daily—so you don’t
-                    have to worry about missed backups, silent failures, or recovery surprises.
-                </p>
-            </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="it-image-fixed moving-image-container">
-                <img src="images/baas.png" alt="Managed Backup Services" />
-            </div>
+         
         </div>
 
+        <!-- RIGHT IMAGE -->
+        <div class="it-image-fixed moving-image-container">
+            <img src="images/baas.png" alt="RainDrive Managed Backup Services" />
+        </div>
     </div>
+
+<div class="container">
+
+     <h3 class="section-title zoom-text" >What You Get with RainDrive BaaS</h3>
+
+            <div class="it-highlights">
+                <div class="highlight-item">
+                    <span class="icon">🛡️</span>
+                    <span><strong>End-to-End Managed Service</strong><br />
+                        From assessment to daily operations, our engineers manage the entire backup lifecycle,
+                        removing risk and operational overhead.
+                    </span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">⏱️</span>
+                    <span><strong>Always-On, Automated Backups</strong><br />
+                        Continuous, automated backups run in the background without impacting business performance.
+                    </span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">🔐</span>
+                    <span><strong>Secure & Encrypted Data Protection</strong><br />
+                        Data is encrypted in transit and at rest, protecting against ransomware, cyber threats,
+                        accidental deletion, and system failures.
+                    </span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">📊</span>
+                    <span><strong>24×7 Monitoring & Proactive Alerts</strong><br />
+                        Continuous monitoring of backup jobs and storage health, with issues resolved before impact.
+                    </span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">⚡</span>
+                    <span><strong>SLA-Driven Recovery</strong><br />
+                        Clearly defined RPOs and RTOs ensure predictable and fast recovery during disruptions.
+                    </span>
+                </div>
+
+                <div class="highlight-item">
+                    <span class="icon">📑</span>
+                    <span><strong>Compliance & Audit Readiness</strong><br />
+                        Enterprise-aligned retention policies, reporting, and governance-ready backup controls.
+                    </span>
+                </div>
+            </div>
+
+             <p class="section-subtitle">
+                With RainDrive BaaS, your backups are actively managed, continuously verified,
+                and always recovery-ready—without adding complexity to your IT operations.
+            </p>
+</div>
+
+
+</div>
+
+
 </section>
 
 
@@ -69,7 +109,7 @@
 ========================== -->
 <section class="baas-section">
 
-  <h2 class="baas-title">What’s Included</h2>
+  <h2 class="baas-title zoom-text">What’s Included</h2>
   <p class="baas-subtitle">
     End-to-end managed backup services designed for reliability, visibility, and security.
   </p>
@@ -124,8 +164,7 @@
      SECTION 3 – SUPPORTED WORKLOADS
 ========================== -->
 <section class="baas-workloads">
-
-  <h3>Supported Workloads</h3>
+ <h2 class="baas-title zoom-text">Supported Workloads</h2>
 
 <div class="container">
      <div class="col-features feature-card">
