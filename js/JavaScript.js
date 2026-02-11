@@ -1,4 +1,39 @@
-﻿
+﻿/* =========================
+    Toggle Font
+========================= */
+// document.addEventListener("DOMContentLoaded", function () {
+//     const body = document.body;
+//     const btn = document.getElementById("fontToggle");
+//     if (!btn) return;
+
+//     // 1. Load saved font safely
+//     const savedFont = localStorage.getItem("siteFont") || "inter";
+//     body.classList.remove("font-inter", "font-inter-light");
+//     body.classList.add("font-" + savedFont);
+
+//     // 2. Update button text
+//     function updateButtonText() {
+//         btn.innerText = body.classList.contains("font-inter")
+//             ? "Use Inter (light)"
+//             : "Use Inter (Regular)";
+//     }
+
+//     updateButtonText();
+
+//     // 3. Toggle font on click
+//     btn.addEventListener("click", function () {
+//         if (body.classList.contains("font-inter")) {
+//             body.classList.replace("font-inter", "font-inter-light");
+//             localStorage.setItem("siteFont", "inter-light");
+//         } else {
+//             body.classList.replace("font-inter-light", "font-inter");
+//             localStorage.setItem("siteFont", "inter");
+//         }
+//         updateButtonText();
+//     });
+// });
+
+
 /* =========================
     PAGE ORDER (GLOBAL)
 ========================= */
@@ -348,3 +383,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+

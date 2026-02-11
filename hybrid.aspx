@@ -7,128 +7,127 @@
             <meta name="description" content="RainDrive | Hybrid & Multi-Cloud Backup" />
             <uc:Seo />
 
-            <body data-page="hybrid.aspx">
+            <script>
+                document.body.setAttribute("data-page", "hybrid.aspx");
+            </script>
         </asp:Content>
 
         <asp:Content ID="Body" ContentPlaceHolderID="MainContent" runat="server">
-            <div data-bg="images/home-bg.jpg"></div>
 
             <section class="section animate">
+                <div class="container two-col it-intro">
+                    <div class="it-content">
+                        <h1>Hybrid & Multi-Cloud Backup</h1>
+
+                        <p class="section-subtitle">
+                            RainDrive’s Hybrid & Multi-Cloud Backup delivers unified, enterprise-grade data
+                            protection
+                            across on-premises infrastructure, private clouds, and multiple public cloud
+                            platforms.
+                            It is designed for organizations operating in complex, distributed IT environments
+                            that
+                            demand security, consistency, and guaranteed recoverability.
+                        </p>
+
+
+                    </div>
+
+                    <div class="it-image-fixed moving-image-container">
+                        <img src="images/hybrid.png" alt="RainDrive Hybrid & Multi-Cloud Backup" />
+                    </div>
+                </div>
                 <div class="container">
+                    <p class="section-subtitle highlight-text" style="margin-top: 30px;">
+                        <strong>
+                            With RainDrive, your data is protected wherever it resides—while management,
+                            visibility,
+                            and accountability remain centralized.
+                        </strong>
+                    </p>
 
-                    <div class="container">
+                 </div>
+                    <div class="container glass-card">
+                        <!-- SUB TITLE -->
+                        <h3 class="section-title zoom-text">What RainDrive Delivers</h3>
 
-                        <div class="container two-col it-intro">
-                            <div class="it-content">
-                                <h1>Hybrid & Multi-Cloud Backup</h1>
-
-                                <p class="section-subtitle">
-                                    RainDrive’s Hybrid & Multi-Cloud Backup delivers unified, enterprise-grade data
-                                    protection
-                                    across on-premises infrastructure, private clouds, and multiple public cloud
-                                    platforms.
-                                    It is designed for organizations operating in complex, distributed IT environments
-                                    that
-                                    demand security, consistency, and guaranteed recoverability.
-                                </p>
-
-
+                        <div class="it-highlights">
+                            <div class="highlight-item">
+                                <span class="icon">🗂️</span>
+                                <span>Centralized backup management across all environments</span>
                             </div>
 
-                            <div class="it-image-fixed moving-image-container">
-                                <img src="images/hybrid.png" alt="RainDrive Hybrid & Multi-Cloud Backup" />
-                            </div>
-                        </div>
-                        <div class="container">
-
-                            <p class="section-subtitle">
-                                With RainDrive, your data is protected wherever it resides—while management,
-                                visibility,
-                                and accountability remain centralized.
-                            </p>
-
-                            <!-- SUB TITLE -->
-                            <h3 class="section-title zoom-text">What RainDrive Delivers</h3>
-
-                            <div class="it-highlights">
-                                <div class="highlight-item">
-                                    <span class="icon">🗂️</span>
-                                    <span>Centralized backup management across all environments</span>
-                                </div>
-
-                                <div class="highlight-item">
-                                    <span class="icon">📏</span>
-                                    <span>Consistent backup & retention policies</span>
-                                </div>
-
-                                <div class="highlight-item">
-                                    <span class="icon">🔐</span>
-                                    <span>Secure, encrypted data protection</span>
-                                </div>
-
-                                <div class="highlight-item">
-                                    <span class="icon">⚙️</span>
-                                    <span>Cloud-optimized efficiency & cost control</span>
-                                </div>
-
-                                <div class="highlight-item">
-                                    <span class="icon">🔄</span>
-                                    <span>Cross-environment workload recovery</span>
-                                </div>
-
-                                <div class="highlight-item">
-                                    <span class="icon">⏱️</span>
-                                    <span>SLA-driven RPO & RTO reliability</span>
-                                </div>
+                            <div class="highlight-item">
+                                <span class="icon">📏</span>
+                                <span>Consistent backup & retention policies</span>
                             </div>
 
-                            <!-- SUB TITLE -->
-                            <h3 class="section-title zoom-text">How It Works</h3>
-
-                            <div class="it-highlights">
-                                <div class="highlight-item">
-                                    <span class="icon">🔍</span>
-                                    <span>Environment discovery & workload assessment</span>
-                                </div>
-
-                                <div class="highlight-item">
-                                    <span class="icon">🧩</span>
-                                    <span>Unified policy design for backup & retention</span>
-                                </div>
-
-                                <div class="highlight-item">
-                                    <span class="icon">🔒</span>
-                                    <span>Automated, secure backups across all platforms</span>
-                                </div>
-
-                                <div class="highlight-item">
-                                    <span class="icon">📊</span>
-                                    <span>24×7 monitoring, validation & health checks</span>
-                                </div>
-
-                                <div class="highlight-item">
-                                    <span class="icon">⚡</span>
-                                    <span>Rapid, expert-led recovery across environments</span>
-                                </div>
+                            <div class="highlight-item">
+                                <span class="icon">🔐</span>
+                                <span>Secure, encrypted data protection</span>
                             </div>
 
-                            <p class="section-subtext muted">
-                                RainDrive continuously monitors and validates your hybrid and multi-cloud backups,
-                                ensuring fast, reliable recovery whenever disruption occurs.
-                            </p>
+                            <div class="highlight-item">
+                                <span class="icon">⚙️</span>
+                                <span>Cloud-optimized efficiency & cost control</span>
+                            </div>
+
+                            <div class="highlight-item">
+                                <span class="icon">🔄</span>
+                                <span>Cross-environment workload recovery</span>
+                            </div>
+
+                            <div class="highlight-item">
+                                <span class="icon">⏱️</span>
+                                <span>SLA-driven RPO & RTO reliability</span>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="container glass-card">
+                        <!-- SUB TITLE -->
+                        <h3 class="section-title zoom-text">How It Works</h3>
 
-                </div>
+                        <div class="it-highlights">
+                            <div class="highlight-item">
+                                <span class="icon">🔍</span>
+                                <span>Environment discovery & workload assessment</span>
+                            </div>
 
+                            <div class="highlight-item">
+                                <span class="icon">🧩</span>
+                                <span>Unified policy design for backup & retention</span>
+                            </div>
+
+                            <div class="highlight-item">
+                                <span class="icon">🔒</span>
+                                <span>Automated, secure backups across all platforms</span>
+                            </div>
+
+                            <div class="highlight-item">
+                                <span class="icon">📊</span>
+                                <span>24×7 monitoring, validation & health checks</span>
+                            </div>
+
+                            <div class="highlight-item">
+                                <span class="icon">⚡</span>
+                                <span>Rapid, expert-led recovery across environments</span>
+                            </div>
+                        </div>
+                    </div>
+<div class="container">
+                    <p class="section-subtitle highlight-text" style="margin-top: 30px;">
+                        <strong>
+                            RainDrive continuously monitors and validates your hybrid and multi-cloud backups,
+                            ensuring fast, reliable recovery whenever disruption occurs.
+                        </strong>
+                    </p>
+</div>
+               
             </section>
-
-
             <!-- =========================
      SECTION 2 – WHAT’S INCLUDED
 ========================== -->
-            <section class="baas-section">
+            <section class="container glass-card baas-section">
 
                 <h2 class="baas-title zoom-text">What’s Included</h2>
                 <p class="baas-subtitle">
@@ -179,8 +178,6 @@
 
                 </div>
             </section>
-
-
             <!-- =========================
      SECTION 3 – SUPPORTED PLATFORMS
 ========================== -->
@@ -200,6 +197,4 @@
                 </div>
 
             </section>
-
-
         </asp:Content>

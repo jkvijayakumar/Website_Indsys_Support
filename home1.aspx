@@ -6,9 +6,6 @@
             <meta name="description" content="RainDrive | Home" />
             <uc:Seo />
 
-            <body data-page="home.aspx">
-
-
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {
                         const params = new URLSearchParams(window.location.search);
@@ -22,22 +19,22 @@
                             }
                         }
                     });
+                    document.body.setAttribute("data-page", "home.aspx");
                 </script>
         </asp:Content>
 
 
         <asp:Content ID="Body" ContentPlaceHolderID="MainContent" runat="server">
+            <div data-bg="images/home-bg.jpg"></div>
 
 
             <section class="section animate" style="min-height: 800px;">
                 <div class="container two-col" style="margin-bottom: 0%; margin-top: 10px;">
                     <div class="col-text">
-                        <div class="row">
-                        <h1 style="font-size: 80px; margin-bottom: 1px;">RainDrive</h1>
-                        <p style="font-size: 20px; margin-top: 1px;  color: #555;">
+                        <h1 style="font-size: 80px;">RainDrive</h1>
+                        <p style="font-size: 20px; margin-top: -10px; color: #555;">
                             Powered by INDSYS. Built for absolute data resilience.
                         </p>
-                        </div>
                         <br />
                         <h1 style="font-size: 40px;">Managed Backup & Disaster Recovery for Businesses</h1>
                         <br />
@@ -148,7 +145,7 @@
                 <div class="threat-protection-grid light-ui">
 
                     <div class="threat-card light-card">
-                        <div class="thread-title-card"><h4> Identified Threats</h4></div>
+                        <h4>⚠ Identified Threats</h4>
                         <ul>
                             <li>Hardware Failures</li>
                             <li>Human Error</li>
@@ -160,7 +157,7 @@
                     </div>
 
                     <div class="protection-card light-card">
-                        <div class="thread-title-card"><h4> RainDrive Protection</h4></div>
+                        <h4>🛡 RainDrive Protection</h4>
                         <ul>
                             <li>Local, Cloud &amp; Multi-Cloud redundancy</li>
                             <li>Immutable &amp; air-gapped backups</li>
@@ -174,10 +171,7 @@
                 </div>
                 <br /> <br />
                 <!-- RISK MATRIX -->
-
-
-
-               <div class="title-card-wrap">
+                <div class="title-card-wrap">
                     <div class="title-card">
                         <h3 class="section-subheading">Risk-to-Impact Matrix</h3>
                     </div>
@@ -190,106 +184,22 @@
                     <div class="matrix-header">Medium Impact</div>
                     <div class="matrix-header">High Impact</div>
 
-                    <div class="matrix-label">Tolerable</div>
+                    <div class="matrix-label">Low Risk</div>
                     <div class="matrix-cell low">Minor Delay</div>
                     <div class="matrix-cell medium">Operational Impact</div>
                     <div class="matrix-cell high">Business Disruption</div>
 
-                    <div class="matrix-label">Business Sensitive</div>
+                    <div class="matrix-label">Medium Risk</div>
                     <div class="matrix-cell medium">Productivity Loss</div>
                     <div class="matrix-cell high">Revenue Impact</div>
                     <div class="matrix-cell critical">Compliance Failure</div>
 
-                    <div class="matrix-label">Unacceptable</div>
+                    <div class="matrix-label">High Risk</div>
                     <div class="matrix-cell high">Service Outage</div>
                     <div class="matrix-cell critical">Data Loss</div>
                     <div class="matrix-cell critical">Business Shutdown</div>
 
-                </div> 
-
-
-<!-- SOLUTION MAPPING -->
-<div class="title-card-wrap">
-    <div class="title-card">
-        <h3 class="section-subheading">
-            RainDrive Capability
-        </h3>
-    </div>
-</div>
-
-<div class="risk-solution-wrap">
-    <table class="risk-solution-table">
-        <thead>
-            <tr>
-                <th>Risk Shown Above</th>
-                <th>RainDrive Capability</th>
-                <th>Result</th>
-            </tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td>Minor Delay</td>
-                <td>Automated daily backups</td>
-                <td>Faster recovery</td>
-            </tr>
-
-            <tr>
-                <td>Operational Impact</td>
-                <td>Fast restore from local NAS</td>
-                <td>Operations resume quickly</td>
-            </tr>
-
-            <tr>
-                <td>Business Disruption</td>
-                <td>Cloud replication</td>
-                <td>Service continuity</td>
-            </tr>
-
-            <tr>
-                <td>Productivity Loss</td>
-                <td>Local NAS restore</td>
-                <td>Minimal downtime</td>
-            </tr>
-
-            <tr>
-                <td>Revenue Impact</td>
-                <td>Cloud replication</td>
-                <td>Business continuity</td>
-            </tr>
-
-            <tr>
-                <td>Compliance Failure</td>
-                <td>Audit-ready reports</td>
-                <td>Compliance confidence</td>
-            </tr>
-
-            <tr>
-                <td>Service Outage</td>
-                <td>DRaaS failover</td>
-                <td>Rapid service restoration</td>
-            </tr>
-
-            <tr>
-                <td>Data Loss</td>
-                <td>Encrypted multi-copy backups</td>
-                <td>Data integrity</td>
-            </tr>
-
-            <tr>
-                <td>Business Shutdown</td>
-                <td>SLA-backed disaster recovery</td>
-                <td>Operations continue</td>
-            </tr>
-
-        </tbody>
-    </table>
-</div>
-
-
-
-
-
+                </div>
 
                 <!-- CONCLUSION -->
                 <p class="section-subtitle highlight-text" style="margin-top: 40px;">

@@ -12,10 +12,11 @@
         </asp:Content>
 
         <asp:Content ContentPlaceHolderID="MainContent" runat="server">
+<div data-bg="images/home-bg.jpg"></div>
 <section class="section animate"
     ">
                 <div class="container">
-                    <h2 class="section-title zoom-text animate" style="justify-self: center;;">Available Services</h2>
+                    <h2>RainDrive Databackup Services</h2>
 
 <div class="cards"">
 

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Website_Indsys_Support
 {
-    public partial class About : Page
+    public partial class baas : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

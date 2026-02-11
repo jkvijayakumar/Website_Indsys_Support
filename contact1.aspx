@@ -14,6 +14,7 @@
 </asp:Content>
 
 <asp:Content ID="Body" ContentPlaceHolderID="MainContent" runat="server">
+<div data-bg="images/home-bg.jpg"></div>
 
 
 <section class="contact-page">
@@ -21,7 +22,7 @@
     <div class="container">
 
         <!-- CONTACT FORM -->
-        <div class="contact-form-wrapper  glass-card">
+        <div class="contact-form-wrapper">
 
             <h2>Get in Touch</h2>
             <p class="form-subtext">

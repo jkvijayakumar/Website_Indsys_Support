@@ -189,7 +189,7 @@
         display: flex !important;
         flex-direction: row;
         align-items: center;
-        gap: 20px;
+        /* gap: 20px; */
     }
     .nav-dropdown {
         position: relative;

@@ -108,7 +108,7 @@
 
     .pricing-addons h2 {
         font-size: 26px;
-        color: #4c00ff;
+        color: #3560ab;
         margin-bottom: 25px;
         font-weight: 500;
     }
@@ -123,10 +123,11 @@
 
     .addons-list span {
         font-size: 14px;
-        color: #333;
-        background: #f0f9f7;
+        color: #ffffff;
+        background: #797c53;
         padding: 10px 16px;
         border-radius: 20px;
+        FONT-WEIGHT: 500;
     }
 
 .quote-cta {

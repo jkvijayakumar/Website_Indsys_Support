@@ -14,6 +14,7 @@
 </asp:Content>
 
 <asp:Content ID="Body" ContentPlaceHolderID="MainContent" runat="server">
+<div data-bg="images/home-bg.jpg"></div>
 
 <section class="section animate">
  
