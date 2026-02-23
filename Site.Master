@@ -49,33 +49,131 @@
 
 
             <div class="nav-dropdown">
-        <a runat="server" id="navAbout" href="#" class="nav-link dropdown-toggle">
+        <a runat="server" id="navAbout" href="about.aspx" class="nav-link dropdown-toggle">
             About ▾
         </a>
 
             <div class="dropdown-menu">
-                <a href="home.aspx?scroll=WhatWeDo">What We Do</a>
-                <a href="home.aspx?scroll=WhyBackup">Why Backup & Identify Threats</a>
-                <a href="home.aspx?scroll=WhyRainDrive">Why RainDrive</a>
-                <a href="home.aspx?scroll=OurArchitectue">Our Backup Architecture</a>
-                <a href="home.aspx?scroll=IndustriesWeServe">Industries We Serve</a>
+                <a href="about.aspx?scroll=WhatWeDo">What We Do</a>
+                <a href="about.aspx?scroll=WhyBackup">Why Backup & Identify Threats</a>
+                <a href="about.aspx?scroll=WhyRainDrive">Why RainDrive</a>
+                <a href="about.aspx?scroll=OurArchitectue">Our Backup Architecture</a>
+                <a href="about.aspx?scroll=IndustriesWeServe">Industries We Serve</a>
             </div>
 
     </div>
 
+<div class="nav-dropdown" runat="server" id="navServicesWrapper">
 
-            <div class="nav-dropdown">
-        <a runat="server" id="navServices" href="services.aspx" class="nav-link dropdown-toggle">
-            Services ▾
-        </a>
+    <!-- Main Menu -->
+    <a runat="server" id="navServices" href="services.aspx" 
+       class="nav-link dropdown-toggle">
+        Services ▾
+    </a>
 
-        <div class="dropdown-menu">
-            <a runat="server" id="navAsc" href="baas.aspx">Managed Backup as a Service (BaaS)</a>
-            <a runat="server" id="navSecurity"  href="draas.aspx">Disaster Recovery as a Service (DRaaS) </a>
-            <a runat="server" id="navBackup"  href="hybrid.aspx">Hybrid & Multi-Cloud Backup </a>
-            <a runat="server" id="navWindowsServer"  href="application.aspx">ERP & Application Backup </a>
+    <div class="dropdown-menu" runat="server" id="menuServices">
+
+        <!-- ================= CORE SERVICES ================= -->
+        <div class="dropdown-submenu" runat="server" id="menuCoreServices">
+
+            <a runat="server" id="navCoreServices" href="services.aspx#core" 
+               class="submenu-toggle">
+                Core Services ▸
+            </a>
+
+            <div class="dropdown-sidemenu" runat="server" id="subMenuCoreServices">
+                <a runat="server" id="navBaas" href="baas.aspx">
+                    Managed Backup as a Service (BaaS)
+                </a>
+
+                <a runat="server" id="navDraas" href="draas.aspx">
+                    Disaster Recovery as a Service (DRaaS)
+                </a>
+
+                <a runat="server" id="navHybrid" href="hybrid.aspx">
+                    Hybrid & Multi-Cloud Backup
+                </a>
+
+                <a runat="server" id="navApplication" href="application.aspx">
+                    ERP & Application Backup
+                </a>
+            </div>
         </div>
+
+
+        <!-- ================= INFRASTRUCTURE BACKUP ================= -->
+        <div class="dropdown-submenu" runat="server" id="menuInfrastructure">
+
+            <a runat="server" id="navInfrastructure" href="services.aspx#infrastructure" 
+               class="submenu-toggle">
+                Infrastructure Backup ▸
+            </a>
+
+            <div class="dropdown-sidemenu" runat="server" id="subMenuInfrastructure">
+                <a runat="server" id="navServerVm" href="server-vm.aspx">
+                    Server & VM Backup
+                </a>
+
+                <a runat="server" id="navNasFile" href="nas-backup.aspx">
+                    NAS & File Server Backup
+                </a>
+
+                <a runat="server" id="navEndpoint" href="endpoint-backup.aspx">
+                    Endpoint Backup (PCs & Laptops)
+                </a>
+            </div>
+        </div>
+
+
+        <!-- ================= DATA & WORKLOAD PROTECTION ================= -->
+        <div class="dropdown-submenu" runat="server" id="menuDataProtection">
+
+            <a runat="server" id="navDataProtection" href="services.aspx#data" 
+               class="submenu-toggle">
+                Data & Workload Protection ▸
+            </a>
+
+            <div class="dropdown-sidemenu" runat="server" id="subMenuDataProtection">
+                <a runat="server" id="navDatabase" href="database-backup.aspx">
+                    Database Backup
+                </a>
+
+                <a runat="server" id="navEmailSaas" href="email-saas-backup.aspx">
+                    Email & SaaS Backup
+                </a>
+
+                <a runat="server" id="navAppAware" href="application-aware.aspx">
+                    Application-Aware Backup
+                </a>
+            </div>
+        </div>
+
+
+        <!-- ================= SECURITY & CONTINUITY ================= -->
+        <div class="dropdown-submenu" runat="server" id="menuSecurityContinuity">
+
+            <a runat="server" id="navSecurityContinuity" href="services.aspx#security" 
+               class="submenu-toggle">
+                Security & Continuity ▸
+            </a>
+
+            <div class="dropdown-sidemenu" runat="server" id="subMenuSecurityContinuity">
+                <a runat="server" id="navRansomware" href="ransomware-backup.aspx">
+                    Ransomware-Resilient Backup
+                </a>
+
+                <a runat="server" id="navImmutable" href="immutable-backup.aspx">
+                    Immutable & Air-Gapped Backup
+                </a>
+
+                <a runat="server" id="navBCP" href="business-continuity.aspx">
+                    Business Continuity Planning
+                </a>
+            </div>
+        </div>
+
     </div>
+</div>
 
             <a runat="server" id="navPricing" href="plans.aspx">Plans</a>
 
@@ -87,6 +185,7 @@
         <div class="dropdown-menu">
             <a runat="server" id="navFaq" href="#">FAQ</a>
             <a runat="server" id="navBlog"  href="#">Blog</a>
+            <a runat="server" id="navTech"  href="technologies.aspx">Technology & Platform</a>
         </div>
     </div>
             <a runat="server" id="navRaiseTicket" href="https://support.indsystech.com/" class="btn">Raise Ticket</a>

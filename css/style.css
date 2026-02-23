@@ -171,15 +171,19 @@ nav a {
 }
 
 
+/* =========================
+   DROPDOWN
+========================= */
+
 .nav-dropdown {
     position: relative;
-    display: inline-block;
 }
 
-    .nav-dropdown .nav-link {
-        cursor: pointer;
-    }
+.nav-dropdown .nav-link {
+    cursor: pointer;
+}
 
+/* Main dropdown */
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -193,18 +197,70 @@ nav a {
     z-index: 1000;
 }
 
-    .dropdown-menu a {
-        display: block;
-        padding: 10px 20px;
-        color: #000000;
-        font-size: 15px;
-        text-decoration: none;
-        transition: background 0.25s;
-    }
+.dropdown-sidemenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    background: rgb(177 180 193);
+    border-radius: 10px;
+    padding: 12px 0;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    display: none;
+    z-index: 1000;
+}
 
-        .dropdown-menu a:hover {
-            background: rgba(19, 103, 42, 0.25);
-        }
+/* Show first-level dropdown */
+.nav-dropdown > .dropdown-menu {
+    display: none;
+}
+
+.nav-dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+/* .dropdown-menu > .dropdown-sidemenu {
+    display: none;
+}
+
+
+.dropdown-menu:hover > .dropdown-sidemenu {
+    display: block;
+}  */
+
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(19, 103, 42, 0.25);
+}
+
+/* =========================
+   SUBMENU (LEVEL 2)
+========================= */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+/* Hide nested submenu by default */
+.dropdown-submenu > .dropdown-sidemenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 2px;
+}
+
+/* Show nested submenu on hover */
+.dropdown-submenu:hover > .dropdown-sidemenu {
+    display: block;
+}
 
 
 
